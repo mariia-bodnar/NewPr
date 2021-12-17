@@ -1,0 +1,38 @@
+.wrapper_popular {
+  font-size: 18px;
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px 12px 10px 12px;
+}
+
+.title_popular {
+  color: aliceblue;
+  background-color: black;
+  text-align: center;
+}
+.selector {
+  width: 305px !important;
+  padding: 5px 0;
+  position: relative;
+}
+.selector_li {
+  width: 100%;
+  list-style: none;
+  padding: 5px 0px 5px 0px;
+  text-decoration: none;
+  height: 21px;
+  margin-left: 5px;
+}
+.border {
+  border-bottom: 1px dotted;
+}
+.backGround_1 {
+    width: 309px;
+    height: 209.67px;
+}
+.without_style_a {
+    text-decoration: none;
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HEWO - Modern Newspaper/Publisher Template</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="" href="./assets/font-awersome/css/font-awesome.min.css" >
     <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script defer src="./js/main.js"></script>
     <!-- <link rel="stylesheet" src="./assets/ws__main.css"> -->
@@ -14,14 +15,67 @@
 </head>
 
 <body>
+    <div id="left_menu" class="display_none">
+        <h4 class="title_popular">POPULAR ARTICLES</h4>
+        <ul class="selector">
+          <li class="border ; selector_li">
+            <a>Trending</a>
+            <span></span>
+          </li>
+          <li class="border ; selector_li">
+            <a>Thinking</a>
+            <span></span>
+          </li>
+          <!-- <ul class="selector">
+              <li class="selector_li"><a></a></li>
+              <ul>
+                  <liclass="selector_li"><a></a></li>
+              </ul> -->
+          <!-- </ul> -->
+          <li class="border ; selector_li"><a>Inspirations</a></li>
+          <li class="selector_li"><a>Contact</a></li>
+        </ul>
+        <h4 class="title_popular">TRENDING</h4>
+        <img class="backGround_1" src="./style/images/thumb-large.jpg" />
+        <a class="without_style_a">
+          Nor again is there anyone who loves or pursues or desires to obtain
+        </a>
+        <div class="block_2">
+          <figure class="block_images"><a><img src="./style/images/thumb-square-1.png" alt="img" /></a>
+          </figure>
+          <div class="blocks__text">
+              <a class="strong" href="/index.html">At vero eos et accu samus et iusto</a><br />
+              </p>
+          </div>
+      </div>
+      <div class="block_2">
+          <figure class="block_images"><a><img src="./style/images/thumb-square-2.png" alt="img" /></a>
+          </figure>
+          <div class="blocks__text">
+              <a class="strong" href="/index.html">At vero eos et accu samus et iusto</a><br />
+              </p>
+          </div>
+      </div>
+      <div class="block_2">
+          <figure class="block_images"><a><img src="./style/images/thumb-square-3.png" alt="img" /></a>
+          </figure>
+          <div class="blocks__text">
+              <a class="strong" href="/index.html">At vero eos et accu samus et iusto</a><br />
+              </p>
+          </div>
+      </div>
+      <h4 class="title_popular">ADVERTISE</h4>
+      <img src="./images/ads.jpg">
+      </div>
     <div class="container">
         <!-- header -->
         <header class="header">
             <div class="header__more-menu">
                 <div class="lines">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                    <span class="display_none_4" id="line_4"></span>
+                    <span class="line_3"></span>
                 </div>
                 <div>
                     <p>MORE</p>
@@ -41,9 +95,12 @@
                             alt="img" /></a>
                 </div>
             </div>
-            <div class="hader__search">
+            <div id="header__search" class="header__search">
                 <img class="hader__search-icon" src="./style/images/icons8-поиск-24.png" alt="img">
                 <span>SEARCH</span>
+            </div>
+            <div>
+                <input placeholder=" Search..." type="text" class="input">
             </div>
         </header>
         <!-- section 1 -->
@@ -59,8 +116,8 @@
             <hr class="linear" />
             <ul class="menu">
                 <li class="menu_list">
-                    <div>
-                        <a class="inline" id="menu_list_1"><span class="menu_dot" id="dot_1"></span>HOME</a>
+                    <div id="menu_list_1">
+                        <a class="inline"><span class="menu_dot" id="dot_1"></span>HOME</a>
                         <div class="column_menu" id="column_menu_1">
                             <div class="inner-wrapper">
                                 <a class="open_menu" href="">Default</a>
@@ -74,16 +131,34 @@
                     </div>
                 </li>
                 <li class="menu_list">
-                    <div>
-                        <a class="inline" id="menu_list_2"><span class="menu_dot" id="dot_2"></span>LAYOUT</a>
+                    <div id="menu_list_2">
+                        <a class="inline"><span class="menu_dot" id="dot_2"></span>LAYOUT</a>
                         <div class="column_menu" id="column_menu_2">
                             <div class="inner-wrapper">
-                                <a class="open_menu" href="">Default</a>
-                                <a class="open_menu" href="">Grid</a>
-                                <a class="open_menu" href="">Big slide</a>
-                                <a class="open_menu" href="">Carausel</a>
-                                <a class="open_menu" href="">Boxed layaut</a>
-                                <a class="open_menu" href="">RTL layaut</a>
+                                <a class="open_menu" id="secondary_menu_1" href="">Category</a>
+                                    <div class="secondary_menu" id="secondary_1">
+                                        <div class="inner-wrapper__">
+                                        <a class="open_menu" href="">Category</a>
+                                        <a class="open_menu" href="">Posts</a>
+                                        <a class="open_menu" href="">Pages</a>
+                                        </div>
+                                    </div>
+                                <a class="open_menu" id="secondary_menu_2" href="">Posts</a>
+                                <div class="secondary_menu" id="secondary_2" >
+                                    <div class="inner-wrapper__">
+                                    <a class="open_menu" href="">Category</a>
+                                    <a class="open_menu" href="">Posts</a>
+                                    <a class="open_menu" href="">Pages</a>
+                                    </div>
+                                </div>
+                                <a class="open_menu" id="secondary_menu_3" href="">Pages</a>
+                                <div class="secondary_menu" id="secondary_3">
+                                    <div class="inner-wrapper__">
+                                    <a class="open_menu" href="">Category</a>
+                                    <a class="open_menu" href="">Posts</a>
+                                    <a class="open_menu" href="">Pages</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -93,8 +168,8 @@
                 </li>
                 <li class="menu_list"><a></a>ECONOMY</li>
                 <li class="menu_list">
-                    <div>
-                        <a class="inline" id="menu_list_3"><span class="menu_dot" id="dot_3"></span>ENTERTAIMENT</a>
+                    <div id="menu_list_3">
+                        <a class="inline"><span class="menu_dot" id="dot_3"></span>ENTERTAIMENT</a>
                         <div class="column_menu" id="column_menu_3">
                             <div class="inner-wrapper">
                                 <a class="open_menu" href="">Default</a>
@@ -498,10 +573,22 @@
             <a class="title_footer">Hello world</a>
             <div class="icons_footer">
                 <img src="./style/images/patern-1.png">
-                <a class="romb"><img class="romb_icon" src="./style/images/FB_icon-icons.com_65484.svg"></a>
-                <a class="romb"><img class="romb_icon" src="./style/images/TWITTER_icon-icons.com_65486.svg"></a>
-                <a class="romb"><img class="romb_icon" src="./style/images/GOOGLE_icon-icons.com_65541.svg"></a>
-                <a class="romb"><img class="romb_icon" src="./style/images/instagram_f_icon-icons.com_65485.svg"></a>
+                <a class="romb"id="romb_1" >
+                    <img class="romb_icon" id="icon_1" src="./style/images/FB_icon-icons.com_65484.svg">
+                    <img class="romb_icon_1" id="icon_copy_1"  src="./style/images/FB_icon-icons.com_65484 copy.svg">
+                </a>
+                <a class="romb" id="romb_2">
+                    <img class="romb_icon" id="icon_2" src="./style/images/TWITTER_icon-icons.com_65486.svg">
+                    <img class="romb_icon_1" id="icon_copy_2" src="./style/images/TWITTER_icon-icons.com_65486 copy.svg">
+                </a>
+                <a class="romb" id="romb_3">
+                    <img class="romb_icon" id="icon_3" src="./style/images/GOOGLE_icon-icons.com_65541.svg">
+                    <img class="romb_icon_1" id="icon_copy_3" src="./style/images/GOOGLE_icon-icons.com_65541 copy.svg">
+                </a>
+                <a class="romb" id="romb_4">
+                    <img class="romb_icon" id="icon_4" src="./style/images/instagram_f_icon-icons.com_65485.svg">
+                    <img class="romb_icon_1" id="icon_copy_4" src="./style/images/instagram_f_icon-icons.com_65485 copy.svg">
+                </a>
                 <img src="./style/images/patern-1.png">
             </div>
             <p class="par_footer">
