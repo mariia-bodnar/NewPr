@@ -918,45 +918,6 @@ a:hover {
   .conteiner_moove {
     margin-left: 25%;
   }
-}
-@media (max-width: 767px) {
-  .main_title {
-    font-size: 54px;
-    transition: all 1s ease;
-  }
-}
-@media (max-width: 576px) {
-  .main_title {
-    font-size: 44px;
-    transition: all 1s ease;
-  }
-}
-@media (max-width: 420px) {
-  .container {
-    font-size: 12px;
-    max-width: 420px;
-  }
-  .main_title {
-    font-size: 24px;
-  }
-  p .tile_2 {
-    font-size: 18px;
-  }
-
-  /* .wrapper_popular {
-     font-size: 18px;
-     display: flex;
-     gap: 30px;
-     width: 100%;
-     min-width: 200px;
-     margin-right: 10px;
-     flex-direction: column;
-     box-sizing: border-box;
-     padding: 10px 12px 10px 12px;
-   } */
-}
-
-@media (max-width: 991px) {
   /* left side */
   .big_sec__3 {
     box-sizing: border-box;
@@ -999,4 +960,84 @@ a:hover {
     text-align: center;
     width: 100%;
   }
+}
+@media (max-width: 767px) {
+  .main_title {
+    font-size: 54px;
+    transition: all 1s ease;
+  }
+  .big_sec__3 {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding: 22px 16px 16px 16px;
+  }
+  .left-side {
+    max-width: 100%;
+  }
+  .block__2 {
+    flex-direction: column;
+    font-size: 24px;
+  }
+  .block_images_medium {
+    width: 100%;
+    height: 100%;
+  }
+  .article_2 {
+    max-width: 100% !important;
+  }
+  .widjet__title{
+    padding-top: 16px;
+  }
+  .blocks__text{
+    text-align: left;
+    padding-left: 16px;
+  }
+  .block__1  {
+    height: auto;
+  }
+  .info-blocks {
+    width: 100%;
+    display: flex;
+    margin: auto;
+  }
+  /* .media_block {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  } */
+  .info-block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .main_title {
+    font-size: 44px;
+    transition: all 1s ease;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    font-size: 12px;
+    max-width: 420px;
+  }
+  .main_title {
+    font-size: 24px;
+  }
+  p .tile_2 {
+    font-size: 18px;
+  }
+
+  /* .wrapper_popular {
+     font-size: 18px;
+     display: flex;
+     gap: 30px;
+     width: 100%;
+     min-width: 200px;
+     margin-right: 10px;
+     flex-direction: column;
+     box-sizing: border-box;
+     padding: 10px 12px 10px 12px;
+   } */
 }

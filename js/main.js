@@ -85,7 +85,7 @@ $(document).ready(() => {
       $('.lines').toggleClass('display_none ');
       $('#left_menu').toggleClass('size_menu');
       // $('.size_menu').css("height","100%")
-      // $('.container').toggleClass('conteiner_moove');
+      $('.container').toggleClass('conteiner_moove');
     })
     // $(".close_tag_button").click (()=>{
       
